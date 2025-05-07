@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automotive & Transportation</title>
+
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="design.css">
+
+
+</head>
+<body>
+    <!-- Navbar -->
+
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-lavender" id="Home">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Automotive & Transportation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Blog" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Products" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Services" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About_Us" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact_Us" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">Contact Us</a>
+              </li>
+            </ul>
+    
+            <button class="btn btn-outline-primary me-2" type="button" data-bs-toggle="modal" data-bs-target="#signInModal">Log In</button>
+
+            <!-- Sign In Modal -->
+            <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true" data-bs-backdrop="false">
+              <div class="modal-dialog">
+                <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signInModalLabel">Log In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+              <div class="mb-3 text-start">
+                <label for="signInEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="signInEmail" placeholder="Enter Email Address">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="signInPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signInPassword" placeholder="Enter your password">
+              </div>
+              <div class="mb-3 text-start">
+              <div class="row align-items-center">
+                <div class="col text-start">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                  </div>
+                </div>
+                <div class="col text-end">
+                  <a href="#" class="text-primary" style="text-decoration: none;">Forgot Password?</a>
+                </div>
+              </div>
+                
+                
+              
+                  <p class="mt-3 text-center">Don't have an account? <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#signUpModal" style="text-decoration: none;">Sign Up</a></p>
+              </div>
+      
+      
+              <button type="submit" class="btn btn-primary w-100">Login In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true" data-bs-backdrop="false">
+              <div class="modal-dialog">
+                <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signUpModalLabel">Sign Up Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+              <div class="mb-3 text-start">
+                <label for="signUpName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="signUpName" placeholder="Enter First Name">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="signUpLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="signUpLastName" placeholder="Enter Last Name">
+              </div>
+            
+              <div class="mb-3 text-start">
+                <label for="signUpLastName" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="signUpLastName" placeholder="Enter Middle Name">
+              </div>
+      
+              <div class="mb-3 text-start">
+                <label for="signUpEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="signUpEmail" placeholder="Enter Email Address">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="signUpPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signUpPassword" placeholder="Create a strong password">
+              </div>
+      
+              <div class="mb-3 text-start">
+                <label for="signUpConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="signUpConfirmPassword" placeholder="Re-enter your password">
+      
+                <br>
+      
+              <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <script>
+      function hoverEffect(element) {
+        element.style.backgroundColor = "lightblue";
+        element.style.color = "blue";
+        element.style.transform = "scale(1.1)";
+        element.style.transition = "background-color 0.3s ease, color 0.3s ease, transform 0.3s ease";
+      }
+    
+      function removeHoverEffect(element) {
+        element.style.backgroundColor = "";
+        element.style.color = "";
+        element.style.transform = "scale(1)";
+        element.style.transition = "background-color 0.3s ease, color 0.3s ease, transform 0.3s ease";
+      }
+    </script>
+    
+    
+    <!-- Carousel -->
+
+   <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/luxury performance .jpg" class="d-block w-100" alt="card1" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 style="text-align: left; font-size:60px; font-weight:bold; color:antiquewhite;" >Luxury Performance</h5>
+      <p style="text-align: left; color:antiquewhite;">Experience our premium selection of vehicles designed for performance, luxury, reliability.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/Reliable Transport Solutions.jpg" class="d-block w-100" alt="card2" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 style="text-align: left; font-size:60px; font-weight:bold; color:antiquewhite;">Reliable Transport Solutions</h5>
+      <p style="text-align: left; color:antiquewhite;">From personal cars to business logistics, we provide seamless transportation solutions to keep moving forward.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/Eco-Friendly Mobility.jpg" class="d-block w-100" alt="card3" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="text-align: left; font-size:60px; font-weight:bold; color:antiquewhite;" >Eco-Friendly Mobility</h5> 
+        <p style="text-align: left; color:antiquewhite;">Explore our range of hybrid and electric vehicles for a sustainable future without compromising performance.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      
+<br>
+<br>
+<br>
+
+<div class="container news-container" id="Blog">
+  <div class="row">
+
+      <h1 style="color:blue" >NEWS CONTENT</h1>
+    <!-- Featured News -->
+    <div class="col-md-7">
+      <div id="featuredNewsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Blog 1 -->
+          <div class="carousel-item active">
+            <img src="img/Self-Driving Cars.jpg" alt="Blog 1" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;">
+            <div class="news-overlay">
+              <span class="news-tags">TECHNOLOGY</span>
+              <h5>Self-Driving Cars: The Road to Full Autonomy</h5>
+              <p class="news-date">March 24, 2025</p>
+            </div>
+          </div>
+          <!-- Blog 2 -->
+          <div class="carousel-item">
+            <img src="img/Electric Vehicles Leading the Charge for a Greener Future.jpg" alt="Blog 2" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;">
+            <div class="news-overlay">
+              <span class="news-tags">SUSTAINABILITY</span>
+              <h5>Electric Vehicles Leading the Charge for a Greener Future</h5>
+              <p class="news-date">March 22, 2025</p>
+            </div>
+          </div>
+          <!-- Blog 3 -->
+          <div class="carousel-item">
+            <img src="img/Smart Transportation.jpg" alt="Blog 3" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;">
+            <div class="news-overlay">
+              <span class="news-tags">LOGISTICS</span>
+              <h5>Revolutionizing Logistics with Smart Transportation</h5>
+              <p class="news-date">March 19, 2025</p>
+            </div>
+          </div>
+          <!-- Blog 4 -->
+          <div class="carousel-item">
+            <img src="img/Automotive Factories Embrace AI.jpg" alt="Blog 4" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;">
+            <div class="news-overlay">
+              <span class="news-tags">MANUFACTURING</span>
+              <h5>Automotive Factories Embrace AI for Smarter Production</h5>
+              <p class="news-date">March 17, 2025</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredNewsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredNewsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- News List -->
+    <div class="col-md-5">
+    <div class="blog">
+      
+      <!-- Blog 1 -->
+      <div class="news-item">
+      <img src="img/Self-Driving Cars.jpg" alt="News 1" style="width: 100%; height: auto; max-height: 100px; object-fit: cover;">
+      <div class="news-text">
+        <span class="news-tags">TECHNOLOGY</span>
+        <h6>Self-Driving Cars: The Road to Full Autonomy</h6>
+        <p class="news-date">March 24, 2025</p>
+      </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="news-item">
+      <img src="img/Electric Vehicles Leading the Charge for a Greener Future.jpg" alt="News 2" style="width: 100%; height: auto; max-height: 100px; object-fit: cover;">
+      <div class="news-text">
+        <span class="news-tags">SUSTAINABILITY</span>
+        <h6>Electric Vehicles Leading the Charge for a Greener Future</h6>
+        <p class="news-date">March 22, 2025</p>
+      </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="news-item">
+      <img src="img/Smart Transportation.jpg" alt="News 3" style="width: 100%; height: auto; max-height: 100px; object-fit: cover;">
+      <div class="news-text">
+        <span class="news-tags">LOGISTICS</span>
+        <h6>Revolutionizing Logistics with Smart Transportation</h6>
+        <p class="news-date">March 19, 2025</p>
+      </div>
+      </div>
+
+      <!-- Blog 4 -->
+      <div class="news-item">
+      <img src="img/Automotive Factories Embrace AI.jpg" alt="News 4" style="width: 100%; height: auto; max-height: 100px; object-fit: cover;">
+      <div class="news-text">
+        <span class="news-tags">MANUFACTURING</span>
+        <h6>Automotive Factories Embrace AI for Smarter Production</h6>
+        <p class="news-date">March 17, 2025</p>
+      </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <hr class="my-5" style="border: 0; height:3px; background: linear-gradient(to right, transparent, black, transparent); width: 80%; margin: auto;">
+
+  <!-- Featured Vehicles Section with Cards -->
+  <div class="#Products">
+    <section id="Products" class="container py-5">
+      <h2 class="text-center text-primary">Featured Vehicles</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 hover-card" style="border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <img src="img/Car 1 Toyota corolla.jpg" class="card-img-top" alt="Toyota Corolla" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 15px 15px 0 0;">
+            <div class="card-body">
+              <h5 class="card-title">Toyota Corolla 2022</h5>
+              <p class="card-text">₱850,000</p>
+              <p class="card-text" style="text-align: justify;">The Toyota Corolla 2022 offers a perfect blend of reliability, fuel efficiency, and modern design, making it an ideal choice for daily commutes and long drives.</p>
+              <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#buyNowModal" onclick="openBuyNowModal('Toyota Corolla 2022', 'img/Car 1 Toyota corolla.jpg')">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 hover-card" style="border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <img src="img/Car 2 Honda Civic.jpg" class="card-img-top" alt="Honda Civic" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 15px 15px 0 0;">
+            <div class="card-body">
+              <h5 class="card-title">Honda Civic 2021</h5>
+              <p class="card-text">₱900,000</p>
+              <p class="card-text" style="text-align: justify;">The Honda Civic 2021 is a stylish and sporty sedan that combines advanced technology, comfort, and performance for an exceptional driving experience.</p>
+              <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#buyNowModal" onclick="openBuyNowModal('Honda Civic 2021', 'img/Car 2 Honda Civic.jpg')">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 hover-card" style="border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <img src="img/Car 3 Tesla model  3.jpg" class="card-img-top" alt="Tesla Model 3" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 15px 15px 0 0;">
+            <div class="card-body">
+              <h5 class="card-title">Tesla Model 3 2023</h5>
+              <p class="card-text">₱2,500,000</p>
+              <p class="card-text" style="text-align: justify;">The Tesla Model 3 2023 is a cutting-edge electric vehicle that offers unparalleled performance, innovative features, and a commitment to sustainability.</p>
+              <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#buyNowModal" onclick="openBuyNowModal('Tesla Model 3 2023', 'img/Car 3 Tesla model  3.jpg')">Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .hover-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+
+  <!-- Buy Now Modal -->
+  <div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="buyNowModalLabel">Purchase Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="card p-4 mb-4" style="max-width: 800px; margin: auto;">
+            <div class="d-flex justify-content-center">
+              <img id="carImage" class="mb-0" style="max-width: 100%; height: auto; max-height: 600px;" alt="Selected Car">
+            </div>
+            <h5 id="carName" class="mb-3"></h5>
+            <div class="mb-3 text-start">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" id="firstName" class="form-control" placeholder="Enter your first name">
+            </div>
+            <div class="mb-3 text-start">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" id="lastName" class="form-control" placeholder="Enter your last name">
+            </div>
+            <div class="mb-3 text-start">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" id="address" class="form-control" placeholder="Enter your address">
+            </div>
+
+            <div class="mb-3 text-start">
+              <label for="paymentType" class="form-label">Payment Type</label>
+              <select id="paymentType" class="form-select">
+                <option value="creditCard"></option>
+                <option value="cash">Cash</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+              </select>
+            </div>
+            <div class="mb-3 text-start">
+              <label for="quantityInput" class="form-label">Enter payment to purchase  </label>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantityInput" class="form-control mx-2 text-center" value="1" min="1" style="width: 200px;">
+                <button class="btn btn-outline-secondary" onclick="increaseQuantity()">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    function openBuyNowModal(carName, carImage) {
+      if (document.getElementById('carName') && document.getElementById('carImage') && document.getElementById('quantityInput')) {
+        document.getElementById('carName').textContent = carName;
+        document.getElementById('carImage').src = carImage;
+        document.getElementById('quantityInput').value = 1;
+      } else {
+        console.error("Modal elements not found.");
+      }
+    }
+
+    function increaseQuantity() {
+      const quantityInput = document.getElementById('quantityInput');
+      quantityInput.value = parseInt(quantityInput.value) + 1;
+    }
+
+    function decreaseQuantity() {
+      const quantityInput = document.getElementById('quantityInput');
+      if (quantityInput.value > 1) {
+        quantityInput.value = parseInt(quantityInput.value) - 1;
+      }
+    }
+  </script>
+
+ 
+  <hr class="my-5" style="border: 0; height:3px; background: linear-gradient(to right, transparent, black, transparent); width: 80%; margin: auto;">
+  
+  <!-- Services Section -->
+  <section class="#Services">
+
+  <div class="container" id="Services">
+  <h2 class="text-center mb-4 text-primary">Our Services</h2>
+  <div class="row g-4">
+  <div class="col-md-4">
+  <div class="card border-0 shadow h-100" style="border-radius: 15px;">
+  <img src="img/Car Sales.jpg" class="card-img-top" alt="Car Sales" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 15px 15px 0 0;">
+  <div class="card-body text-center">
+  <h5 class="card-title">Car Sales</h5>
+  <p class="card-text">Find the perfect vehicle from our wide range of selections.</p>
+  <a href="#" class="btn btn-outline-primary">Learn More</a>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="col-md-4">
+  <div class="card border-0 shadow h-100" style="border-radius: 15px;">
+  <img src="img/Auto Repair.jpg" class="card-img-top" alt="Auto Repairs" style="width: 100%; height: auto; max-height: 200px;  border-radius: 15px 15px 0 0;">
+  <div class="card-body text-center">
+  <h5 class="card-title">Auto Repairs</h5>
+  <p class="card-text">Get high-quality repairs and maintenance services.</p>
+  <a href="#" class="btn btn-outline-primary">Learn More</a>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="col-md-4">
+  <div class="card border-0 shadow h-100" style="border-radius: 15px;">
+  <img src="img/Logistics Transport.jpg" class="card-img-top" alt="Logistics & Transport" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 15px 15px 0 0;">
+  <div class="card-body text-center">
+  <h5 class="card-title">Logistics & Transport</h5>
+  <p class="card-text">Efficient and reliable transportation solutions.</p>
+  <a href="#" class="btn btn-outline-primary">Learn More</a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <br>
+  <br>
+
+  <hr class="my-5" style="border: 0; height:3px; background: linear-gradient(to right, transparent, black, transparent); width: 80%; margin: auto;">
+
+  <!-- About Us Section -->
+  
+  <br>
+  <br>
+    
+  <section id="About_Us" class="container py-5">
+    <h2 class="display-5 text-center fw-bold mb-5 text-primary">About Us</h2>
+
+    <div class="mb-5 border border-primary rounded p-4 shadow-lg bg-light" style="background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);">
+      <h3 class="h4 fw-semibold text-center text-primary"> History</h3>
+      <p class="lead text-muted text-center">
+      Founded in 2005, <span class="fw-bold text-dark">Automotive & Transportation</span> began with a vision to revolutionize the way people and goods move. From humble beginnings as a local vehicle supplier, we have grown into a trusted name in the industry, known for innovation, reliability, and customer satisfaction.
+      </p>
+    </div>
+
+    <div class="mb-5 border border-primary rounded p-4 shadow-lg bg-light" style="background: linear-gradient(to bottom right, #e6f7ff, #f0f8ff);">
+      <h3 class="h4 fw-semibold text-center text-primary">Philosophy</h3>
+      <p class="lead text-muted text-justify" style="text-align: justify;">
+      At Automotive & Transportation, we believe in driving progress through integrity, innovation, and unwavering customer commitment. Since our founding in 2005, our philosophy has been to move not just vehicles and goods, but also the lives and dreams of the people we serve.
+      </p>
+      <p class="lead text-muted text-justify" style="text-align: justify;">
+      We strive to lead with purpose—providing reliable transportation solutions while upholding transparency, quality, and excellence in every service we offer. Our journey from a humble local supplier to a trusted name in the industry reflects our dedication to continuous growth, strong partnerships, and creating lasting value for our customers and communities.
+      </p>
+    </div>
+    
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+      <h2 class="display-4 fw-bold text-center text-primary">Core Values</h2>
+      <hr class="my-4">
+      <ul class="list-group shadow-sm">
+        <li class="list-group-item core-value-item">
+          <span class="fw-bold text-dark display-8">Integrity:</span> 
+          <p class="text-muted">We operate with honesty and transparency in everything we do.</p>
+        </li>
+        <li class="list-group-item core-value-item">
+          <span class="fw-bold text-dark display-8">Customer Focus:</span> 
+          <p class="text-muted">Our clients are at the heart of our business decisions.</p>
+        </li>
+        <li class="list-group-item core-value-item">
+          <span class="fw-bold text-dark display-8">Innovation:</span> 
+          <p class="text-muted">We embrace cutting-edge technologies and sustainable practices.</p>
+        </li>
+        <li class="list-group-item core-value-item">
+          <span class="fw-bold text-dark display-8">Excellence:</span> 
+          <p class="text-muted">We strive for top-tier quality in our services and products.</p>
+        </li>
+        <li class="list-group-item core-value-item">
+          <span class="fw-bold text-dark display-8">Teamwork:</span> 
+          <p class="text-muted">Collaboration and respect fuel our workplace culture.</p>
+        </li>
+            </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+
+    <style>
+      .core-value-item {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .core-value-item:hover {
+      background-color: #f0f8ff;
+      transform: scale(1.02);
+      }
+    </style>
+
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="border border-primary rounded p-4 shadow-sm">
+          <h3 class="h4 fw-semibold text-center text-primary">Mission</h3>
+          <p class="text-muted">
+            To deliver reliable, innovative, and eco-friendly automotive and transportation solutions that exceed our customers’ expectations while positively impacting the world.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="border border-primary rounded p-4 shadow-sm">
+          <h3 class="h4 fw-semibold text-center text-primary">Vision</h3>
+          <p class="text-muted">
+            To become the global leader in sustainable mobility by reshaping the future of transportation with innovation, integrity, and customer-first values.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+
+  </section>
+  <!-- Contact Section -->
+  <div id="Contact_Us">
+
+  <center>
+  <section id="contact" class="contact-section">
+    <div class="container py-50">
+      <h1 class="text-center fw-bold display-5 mb-4 text-primary"></h1>
+
+      <div class="container py-50">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">Contact Us</h1>
+      <p class="text-muted">We’d love to hear from you</p>
+    </div>
+    
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+      Contact Details
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title text-center w-100" id="contactModalLabel">Contact Information</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="card p-4 mb-4" style="max-width: 800px; margin: auto;">
+        <div class="row align-items-center">
+        <div class="col-md-2 text-center">
+        <img src="img/ceo.png" alt="Owner Image" class="owner-img" style="width: 200px; height: 200px; object-fit: cover; float:center;">
+        </div>
+        <div class="col-md-9 text-end">
+        <h3 class="fw-bold mb-1">Mr. John Anderson</h3>
+        <p class="text-muted mb-0">Founder & CEO</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Left Column -->
+        <div class="col-md-6 border-end">
+        <h5 class="fw-semibold">Company Name</h5>
+        <p class="text-muted">Automotive & Transportation</p>
+
+        <h5 class="fw-semibold">Phone</h5>
+        <p class="text-muted">(123) 456-7890</p>
+
+        <h5 class="fw-semibold">Email</h5>
+        <p class="text-muted">info@autotran.com</p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+        <h5 class="fw-semibold">Main Location</h5>
+        <p class="text-muted">123 Main Street, Metro City</p>
+
+        <h5 class="fw-semibold">Branches</h5>
+        <p class="text-muted">
+        Eastside Branch - 456 Avenue Road<br>
+        Westside Branch - 789 Highway Blvd<br>
+        Northside Branch - 1011 Uptown Dr
+        </p>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="text-center mt-4">
+        <a href="mailto:info@automotiveandtransportation.com" class="btn btn-primary me-2 px-4">
+        📧 Email Us
+        </a>
+        <a href="tel:+11234567890" class="btn btn-outline-primary px-4">
+        📞 Call Us
+        </a>
+      </div>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      </div>
+      </div>
+        </div>
+
+   
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldnv0O8r+4+6Jp4b6Y5o5j6Z5j6Z5j6Z5j6Z5j6" crossorigin="anonymous"></script>
+</body>
+</html>
+
+  </section>
+  </center>
+
+    
+    
+
+</div>
+
+
+
+    
+    <!-- Footer -->
+    <footer class="bg-light text-dark pt-4">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-3">
+                <h5>Automotive and Transportation</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" id="#"    class="text-dark text-decoration-none">Home</a></li>
+                    <li><a href="#Blog" id="Blog" class="text-dark text-decoration-none">Blog</a></li>
+                    <li><a href="#Products" id="Products" class="text-dark text-decoration-none">Products</a></li>
+                    <li><a href="#Services" id="Services" class="text-dark text-decoration-none">Services</a></li>
+                    <li><a href="#About_Us" id="About_Us"class="text-dark text-decoration-none">About Us</a></li>
+                    <li><a href="#Contact_Us" id="Contact_Us" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- How to Buy -->
+            <div class="col-md-3">
+                <h5>How to Buy</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">View All Products</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Buying Options</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Find a Partner</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Sales & Refunds</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Subscription Plans</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="col-md-3">
+                <h5>Support</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Product Support</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Manage Your Account</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Download & Install</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Product Status</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Education Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p class="mb-1"><i class="fas fa-map-marker-alt"></i> 123 Main Street, Metro City</p>
+                <p class="mb-1"><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p class="mb-1"><i class="fas fa-envelope"></i>info@autotran.com</p>
+                <p class="mb-1"><i class="fas fa-clock"></i> Mon–Sat | 9 AM – 7 PM</p>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="text-center mt-4">
+            <a href="#" class="text-dark me-2"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-dark me-2"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-dark me-2"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-dark me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+
+        <!-- Bottom Links -->
+        <div class="text-center py-3 mt-3 border-top">
+            <small>
+                <a href="#" class="text-dark text-decoration-none">Privacy</a> |
+                <a href="#" class="text-dark text-decoration-none">Cookie Preferences</a> |
+                <a href="#" class="text-dark text-decoration-none">Terms of Use</a> |
+                <a href="#" class="text-dark text-decoration-none">Legal</a> |
+                © 2025 Automotive and Transportation. All Rights Reserved.
+            </small>
+        </div>
+    </div>
+</footer>
+
+      <!-- ONLINE BOOTSTRAP-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- OFFLINE BOOTSTRAP -->
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

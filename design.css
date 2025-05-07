@@ -1,0 +1,51 @@
+.navbar-lavender {
+  background-color: lightblue !important;
+}
+
+.d-flex {
+  background-color: lightblue !important;
+}
+
+hr {
+  background-color: lightblue !important;
+  border: 0; /* Remove the border */
+  height: -34px; /* Specify the height */
+}
+
+nav {
+  text-align: right;
+}
+
+.content-box {
+  border: 1px solid #ddd;
+  padding: 40px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-section {
+  border-top: 4px solid #007bff;
+  padding: 40px 0;
+  text-align: center;
+}
+.contact-section h2 {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.contact-card {
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  background-color: #fff;
+}
+.owner-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
